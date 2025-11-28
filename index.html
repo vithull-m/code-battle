@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeBattle Entry Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <img src="banner.jpg" alt="CodeBattle Banner" class="banner" />
+
+    <h2>CodeBattle Contest Entry</h2>
+
+    <form id="entryForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <p class="error" id="nameErr"></p>
+
+      <label for="language">Programming Language:</label>
+      <select id="language">
+        <option value="">-- Select --</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+      </select>
+      <p class="error" id="langErr"></p>
+
+      <label for="experience">Experience (years):</label>
+      <input type="number" id="experience" />
+      <p class="error" id="expErr"></p>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="successMsg" class="success"></p>
+
+    <img src="coding.png" alt="Coding Illustration" class="footer-img" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
